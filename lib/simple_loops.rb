@@ -1,7 +1,8 @@
 # Write your methods here
 def loop_message_five_times(message)
-  5.times puts message
+5.times{puts message}
 end
+
 def loop_message_n_times(message, n)
 i=0
   while n>i
@@ -9,12 +10,20 @@ i=0
   i +=1
 end
 end
-def output_array(message, n)
+
+def output_array(array)
   i=0
-  array=[]
-  until i==n
-    array[i]=message
+  while i<array.length
+    puts array[i]
     i +=1
   end
-  puts array
+end
+
+def return_string_array(array)
+  i=0
+  while i< array.length
+    array[i]= array[i].to_s
+    i +=1
+  end
+  p array
 end
