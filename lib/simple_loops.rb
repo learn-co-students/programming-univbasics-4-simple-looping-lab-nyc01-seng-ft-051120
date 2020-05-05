@@ -16,8 +16,16 @@ def loop_message_n_times(message, n)
   n.times { puts message }
 end
 
+#def output_array(array)
+#  array.each { |i| puts i }
+#end
+
 def output_array(array)
-  array.each { |i| puts i }
+  count = 0
+
+  while array.length > count
+    puts array[count]
+  end
 end
 
 def return_string_array(array)
